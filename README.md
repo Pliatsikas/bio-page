@@ -2,6 +2,8 @@
 
 > A personal bio page demo built with HTML & CSS
 
+# Watch it live [here](https://pliatsikas.github.io/bio-page/).
+
 ## 📖 Description
 
 This is a personal biography webpage project that showcases fundamental web development skills using HTML and CSS. The project serves as a simple yet elegant portfolio piece demonstrating clean code structure, responsive design principles, and modern CSS styling techniques. Perfect for beginners learning web development or anyone looking for a starting template for their personal bio page.
