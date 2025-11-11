@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Alex — Bio</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Roboto+Mono:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="favicon.svg">
+    <meta name="theme-color" content="#071116">
+    </head>
+
+    <body>
+        <div class="page">
+            <header class="site-header">
+                <div class="brand">
+                    <div class="logo" aria-hidden="true">▦</div>
+                    <div class="brand-text">
+                        <div class="name">ALEX PLIATSIKAS</div>
+                        <div class="role">Systems · Tools · Research</div>
+                    </div>
+                </div>
+                <nav class="site-nav" aria-label="Primary">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="certificates.html">Certificates</a>
+                    <a class="nav-link btn btn-ghost" href="projects.html">Projects</a>
+                </nav>
+            </header>
+
+            <main class="content">
+                <section class="intro card">
+                    <h2 class="card-title">Bio</h2>
+                    <p class="lede">I design reliable systems, tools and experiments — with clarity, automation and a slight industrial edge.</p>
+
+                    <ul class="meta">
+                        <li><span class="meta-key">Location</span><span class="meta-val">Thessaloniki, GR</span></li>
+                        <li><span class="meta-key">Focus</span><span class="meta-val">Automation · Tooling · Data</span></li>
+                    </ul>
+                </section>
+
+                <section class="grid panels">
+                    <article class="card panel">
+                        <h3 class="panel-title">Skills</h3>
+                        <ul class="skills">
+                            <li><span>Web / Frontend</span><b class="bar"><i style="width:90%"></i></b></li>
+                            <li><span>Photoshop / Premiere</span><b class="bar"><i style="width:80%"></i></b></li>
+                            <li><span>C / C++ / JS</span><b class="bar"><i style="width:65%"></i></b></li>
+                        </ul>
+                    </article>
+
+                    <article class="card panel specs">
+                        <h3 class="panel-title">Tech-spec</h3>
+                        <dl>
+                            <div class="spec-row"><dt>OS</dt><dd>macOS / Windows</dd></div>
+                            <div class="spec-row"><dt>Editor</dt><dd>VS Code</dd></div>
+                            <div class="spec-row"><dt>Preferred Shell</dt><dd>zsh</dd></div>
+                        </dl>
+                    </article>
+                </section>
+            </main>
+
+               <!-- floating blueprint widget -->
+               <div class="blueprint" tabindex="0" aria-label="Floating blueprint. Press space to toggle animation">
+                   <div class="blueprint-inner" aria-hidden="true">
+                       <svg viewBox="0 0 220 140" width="220" height="140" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+                           <defs>
+                               <pattern id="grid" width="11" height="11" patternUnits="userSpaceOnUse">
+                                   <path d="M11 0 L0 0 0 11" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="0.6"/>
+                               </pattern>
+                           </defs>
+                           <rect x="2" y="2" width="216" height="136" rx="6" ry="6" fill="url(#grid)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+                           <!-- schematic lines -->
+                           <g stroke="var(--accent)" stroke-width="1.2" fill="none" opacity="0.9">
+                               <path d="M28 28 L70 28 L70 60" stroke-dasharray="4 3"/>
+                               <circle cx="150" cy="70" r="18" stroke-dasharray="2 3"/>
+                               <path d="M150 52 L170 40" />
+                           </g>
+                           <!-- small labels -->
+                           <g font-family="Roboto Mono, monospace" font-size="9" fill="var(--muted)">
+                               <text x="14" y="18">BP-01</text>
+                               <text x="14" y="36">layout.v1</text>
+                           </g>
+                       </svg>
+                   </div>
+               </div>
+
+               <footer class="site-footer">
+                   <div class="footer-inner">Contact — <a href="mailto:you@example.com">alexandrospliatsikas8@gmail.com</a></div>
+               </footer>
+
+           </div>
+
+           <script>
+               (function(){
+                   const bp = document.querySelector('.blueprint');
+                   const inner = bp.querySelector('.blueprint-inner');
+
+                   // pause/resume on hover/focus/click/keyboard
+                   function togglePause(){ bp.classList.toggle('paused'); }
+                   bp.addEventListener('mouseenter', ()=>bp.classList.add('paused'));
+                   bp.addEventListener('mouseleave', ()=>bp.classList.remove('paused'));
+                   bp.addEventListener('click', togglePause);
+                   bp.addEventListener('keydown', (e)=>{ if(e.key === ' ' || e.key === 'Enter'){ e.preventDefault(); togglePause(); } });
+
+                   // pointer parallax (subtle movement)
+                   let raf = null;
+                   document.addEventListener('pointermove', (e)=>{
+                       if(raf) cancelAnimationFrame(raf);
+                       raf = requestAnimationFrame(()=>{
+                           const w = window.innerWidth; const h = window.innerHeight;
+                           const nx = (e.clientX / w - 0.5) * 12; // range ~ -6..6 px
+                           const ny = (e.clientY / h - 0.5) * 8;  // range ~ -4..4 px
+                           bp.style.transform = `translate3d(${nx}px, ${ny}px, 0)`;
+                       });
+                   });
+
+                   // small entrance offset so it doesn't sit flush
+                   bp.style.transform = 'translate3d(0,0,0)';
+               })();
+           </script>
+        </div>
+    </body>
+</html>
