@@ -146,8 +146,8 @@ Programming Foundations  ███████████████░░░�
 
 ## 📈 GitHub Stats
 
-<img height="160" src="https://github-readme-stats.vercel.app/api?username=alexpliatsikas&show_icons=true&theme=dark&bg_color=05090a&title_color=f0b35c&icon_color=4db79f&text_color=e9efec&border_color=1a2a2a&hide_border=false&count_private=true" />
-<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=alexpliatsikas&layout=compact&theme=dark&bg_color=05090a&title_color=f0b35c&text_color=e9efec&border_color=1a2a2a&hide_border=false" />
+<img height="160" src="https://github-readme-stats.vercel.app/api?username=Pliatsikas&show_icons=true&theme=dark&bg_color=05090a&title_color=f0b35c&icon_color=4db79f&text_color=e9efec&border_color=1a2a2a&hide_border=false&count_private=true" />
+<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Pliatsikas&layout=compact&theme=dark&bg_color=05090a&title_color=f0b35c&text_color=e9efec&border_color=1a2a2a&hide_border=false" />
 
 </div>
 
