@@ -21,9 +21,9 @@ function ProjectsPage() {
             <span>Branding</span>
             <span>UI System</span>
             <span>Prototype</span>
-            <a className="btn" href="#" style={{ margin: 0, alignSelf: 'center' }}>
+            {/* <a className="btn" href="#" style={{ margin: 0, alignSelf: 'center' }}>
               Project details
-            </a>
+            </a> */}
           </div>
         </article>
 
@@ -39,9 +39,9 @@ function ProjectsPage() {
             <span>OCR</span>
             <span>Computer Vision</span>
             <span>Automation</span>
-            <a className="btn" href="#" style={{ margin: 0, alignSelf: 'center' }}>
+            {/* <a className="btn" href="#" style={{ margin: 0, alignSelf: 'center' }}>
               Project details
-            </a>
+            </a> */}
           </div>
         </article>
 
@@ -57,9 +57,9 @@ function ProjectsPage() {
             <span>Generative AI</span>
             <span>RAG</span>
             <span>NLP</span>
-            <a className="btn" href="#" style={{ margin: 0, alignSelf: 'center' }}>
+            {/* <a className="btn" href="#" style={{ margin: 0, alignSelf: 'center' }}>
               Project details
-            </a>
+            </a> */}
           </div>
         </article>
 
