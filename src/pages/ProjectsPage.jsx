@@ -17,14 +17,14 @@ function ProjectsPage() {
             Built a visual system and landing concept for an industrial-style
             brand identity with reusable style tokens.
           </p>
-          <div className="tag-row">
+          <div className="tag-row" style={{ alignItems: 'center' }}>
             <span>Branding</span>
             <span>UI System</span>
             <span>Prototype</span>
+            <a className="btn" href="#" style={{ margin: 0, alignSelf: 'center' }}>
+              Project details
+            </a>
           </div>
-          <a className="btn" href="#">
-            Project details
-          </a>
         </article>
 
         <article className="card project-card">
@@ -35,10 +35,13 @@ function ProjectsPage() {
             extracts critical data points from passports and national ID cards,
             dynamically automating user verification.
           </p>
-          <div className="tag-row">
+          <div className="tag-row" style={{ alignItems: 'center' }}>
             <span>OCR</span>
             <span>Computer Vision</span>
             <span>Automation</span>
+            <a className="btn" href="#" style={{ margin: 0, alignSelf: 'center' }}>
+              Project details
+            </a>
           </div>
         </article>
 
@@ -50,12 +53,31 @@ function ProjectsPage() {
             bases and historical Jira tickets to provide instant, accurate
             answers and accelerate issue resolution.
           </p>
-          <div className="tag-row">
+          <div className="tag-row" style={{ alignItems: 'center' }}>
             <span>Generative AI</span>
             <span>RAG</span>
             <span>NLP</span>
+            <a className="btn" href="#" style={{ margin: 0, alignSelf: 'center' }}>
+              Project details
+            </a>
           </div>
         </article>
+
+        <article className="card project-card">
+          <h2>Aura Immersive Web Experience</h2>
+          <p>
+            A next-generation architectural portfolio built with Next.js and React Three Fiber. Features real-time WebGL fluid simulations and custom shaders for a deeply tactile digital experience.
+          </p>
+          <div className="tag-row" style={{ alignItems: 'center' }}>
+            <span>WebGL</span>
+            <span>Framer Motion</span>
+            <span>Next.js</span>
+            <a className="btn" href="https://aura-sand-pi.vercel.app/" style={{ margin: 0, alignSelf: 'center' }}>
+              Project details
+            </a>
+          </div>
+        </article>
+
       </section>
     </>
   )
