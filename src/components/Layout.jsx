@@ -1,5 +1,6 @@
 import { NavLink, Outlet, useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
+import DotGrid from './DotGrid'
 
 function Layout() {
   const location = useLocation()
@@ -39,36 +40,9 @@ function Layout() {
       })
     }
 
-    const orbs = Array.from(document.querySelectorAll('.orb'))
-    let frame = null
-
-    const onMove = (event) => {
-      if (frame) {
-        cancelAnimationFrame(frame)
-      }
-
-      frame = requestAnimationFrame(() => {
-        const x = event.clientX / window.innerWidth - 0.5
-        const y = event.clientY / window.innerHeight - 0.5
-
-        orbs[0].style.transform = `translate(${x * -26}px, ${y * -18}px)`
-        orbs[1].style.transform = `translate(${x * 22}px, ${y * 14}px)`
-      })
-    }
-
-    if (orbs.length === 2) {
-      window.addEventListener('pointermove', onMove, { passive: true })
-    }
-
     return () => {
       if (observer) {
         observer.disconnect()
-      }
-      if (frame) {
-        cancelAnimationFrame(frame)
-      }
-      if (orbs.length === 2) {
-        window.removeEventListener('pointermove', onMove)
       }
     }
   }, [location.pathname])
@@ -79,8 +53,17 @@ function Layout() {
   return (
     <>
       <div className="page-bg" aria-hidden="true">
-        <div className="orb orb-1"></div>
-        <div className="orb orb-2"></div>
+        <DotGrid
+          dotSize={5}
+          gap={15}
+          baseColor="#4A415D"
+          activeColor="#8F74FF"
+          proximity={120}
+          shockRadius={250}
+          shockStrength={5}
+          maxSpeed={5000}
+          returnDuration={1.5}
+        />
       </div>
 
       <div className="page-shell">

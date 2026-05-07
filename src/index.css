@@ -30,10 +30,7 @@ body {
 }
 
 body {
-  background:
-    radial-gradient(circle at 10% -10%, rgba(77, 183, 159, 0.1), transparent 36%),
-    radial-gradient(circle at 88% 108%, rgba(240, 179, 92, 0.1), transparent 34%),
-    linear-gradient(160deg, var(--bg) 0%, var(--bg-2) 100%);
+  background: var(--bg);
   color: var(--text);
   font-family: var(--sans);
   font-size: clamp(0.98rem, 0.28vw + 0.92rem, 1.06rem);
@@ -49,7 +46,7 @@ body::before {
   background-size: 36px 36px;
   content: '';
   inset: 0;
-  opacity: 0.2;
+  opacity: 0.24;
   pointer-events: none;
   position: fixed;
   z-index: 0;
@@ -57,32 +54,10 @@ body::before {
 
 .page-bg {
   inset: 0;
+  overflow: hidden;
   pointer-events: none;
   position: fixed;
   z-index: 0;
-}
-
-.orb {
-  border-radius: 50%;
-  filter: blur(2px);
-  opacity: 0.42;
-  position: absolute;
-}
-
-.orb-1 {
-  background: radial-gradient(circle at 30% 30%, rgba(88, 208, 180, 0.88), rgba(88, 208, 180, 0));
-  height: 28rem;
-  left: -7rem;
-  top: -6rem;
-  width: 28rem;
-}
-
-.orb-2 {
-  background: radial-gradient(circle at 70% 30%, rgba(244, 184, 96, 0.8), rgba(244, 184, 96, 0));
-  bottom: -10rem;
-  height: 32rem;
-  right: -8rem;
-  width: 32rem;
 }
 
 .page-shell {
@@ -231,6 +206,10 @@ main {
   font-size: 0.7rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
+}
+
+.card .eyebrow {
+  color: var(--accent);
 }
 
 .lede {

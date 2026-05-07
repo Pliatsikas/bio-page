@@ -12,22 +12,7 @@ function ProjectsPage() {
 
       <section className="projects-grid reveal">
         <article className="card project-card">
-          <h2>Meatllab Concept Brand</h2>
-          <p>
-            Built a visual system and landing concept for an industrial-style
-            brand identity with reusable style tokens.
-          </p>
-          <div className="tag-row" style={{ alignItems: 'center' }}>
-            <span>Branding</span>
-            <span>UI System</span>
-            <span>Prototype</span>
-            {/* <a className="btn" href="#" style={{ margin: 0, alignSelf: 'center' }}>
-              Project details
-            </a> */}
-          </div>
-        </article>
-
-        <article className="card project-card">
+          <p className="eyebrow">Automation</p>
           <h2>Rentalbook OCR Engine</h2>
           <p>
             Engineered a high-precision Optical Character Recognition (OCR)
@@ -46,6 +31,7 @@ function ProjectsPage() {
         </article>
 
         <article className="card project-card">
+          <p className="eyebrow">AI</p>
           <h2>E-Avenue Jira AI Copilot</h2>
           <p>
             An intelligent workspace assistant leveraging cutting-edge
@@ -64,6 +50,7 @@ function ProjectsPage() {
         </article>
 
         <article className="card project-card">
+          <p className="eyebrow">WebGL</p>
           <h2>Aura Immersive Web Experience</h2>
           <p>
             A next-generation architectural portfolio built with Next.js and React Three Fiber. Features real-time WebGL fluid simulations and custom shaders for a deeply tactile digital experience.
@@ -78,6 +65,19 @@ function ProjectsPage() {
           </div>
         </article>
 
+        <article className="card project-card">
+          <p className="eyebrow">Documentation</p>
+          <h2>Markdown, MkDocs, and Material for MkDocs</h2>
+          <p>
+            I build clear, structured documentation that turns notes into
+            maintainable knowledge bases and polished docs sites.
+          </p>
+          <div className="tag-row" style={{ alignItems: 'center' }}>
+            <span>Markdown</span>
+            <span>MkDocs</span>
+            <span>Material</span>
+          </div>
+        </article>
       </section>
     </>
   )

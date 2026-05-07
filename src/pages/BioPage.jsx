@@ -17,6 +17,7 @@ function BioPage() {
         <ul className="chip-row" aria-label="Quick facts">
           <li>Based in Thessaloniki, GR</li>
           <li>LLM &amp; RAG Researcher</li>
+          <li>MkDocs</li>
           <li>Always learning</li>
         </ul>
       </section>
@@ -49,6 +50,10 @@ function BioPage() {
             <div>
               <dt>Languages</dt>
               <dd>JavaScript, Python, PHP, SQL, React</dd>
+            </div>
+            <div>
+              <dt>Docs &amp; Content</dt>
+              <dd>Markdown, MkDocs, Material for MkDocs</dd>
             </div>
             <div>
               <dt>Design</dt>
