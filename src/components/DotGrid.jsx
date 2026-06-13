@@ -1,7 +1,10 @@
-import { useCallback, useEffect, useMemo, useRef } from 'react'
+import { useRef, useEffect, useCallback, useMemo } from 'react'
 import { gsap } from 'gsap'
+import { InertiaPlugin } from 'gsap/InertiaPlugin'
 
 import './DotGrid.css'
+
+gsap.registerPlugin(InertiaPlugin)
 
 const throttle = (func, limit) => {
   let lastCall = 0
@@ -40,6 +43,7 @@ function DotGrid({
   shockRadius = 250,
   shockStrength = 5,
   maxSpeed = 5000,
+  resistance = 750,
   returnDuration = 1.5,
   className = '',
   style,
@@ -89,12 +93,12 @@ function DotGrid({
 
     const context = canvas.getContext('2d')
     if (context) {
-      context.setTransform(dpr, 0, 0, dpr, 0, 0)
+      context.scale(dpr, dpr)
     }
 
     const cell = dotSize + gap
-    const cols = Math.max(1, Math.floor((width + gap) / cell))
-    const rows = Math.max(1, Math.floor((height + gap) / cell))
+    const cols = Math.floor((width + gap) / cell)
+    const rows = Math.floor((height + gap) / cell)
 
     const gridWidth = cell * cols - gap
     const gridHeight = cell * rows - gap
@@ -106,7 +110,6 @@ function DotGrid({
     const startY = extraY / 2 + dotSize / 2
 
     const dots = []
-
     for (let y = 0; y < rows; y += 1) {
       for (let x = 0; x < cols; x += 1) {
         dots.push({
@@ -127,26 +130,21 @@ function DotGrid({
       return undefined
     }
 
-    let rafId = 0
+    let rafId
     const proxSq = proximity * proximity
 
     const draw = () => {
       const canvas = canvasRef.current
-      const wrapper = wrapperRef.current
-
-      if (!canvas || !wrapper) {
-        rafId = requestAnimationFrame(draw)
+      if (!canvas) {
         return
       }
 
       const context = canvas.getContext('2d')
       if (!context) {
-        rafId = requestAnimationFrame(draw)
         return
       }
 
-      const { width, height } = wrapper.getBoundingClientRect()
-      context.clearRect(0, 0, width, height)
+      context.clearRect(0, 0, canvas.width, canvas.height)
 
       const { x: pointerX, y: pointerY } = pointerRef.current
 
@@ -158,14 +156,13 @@ function DotGrid({
         const distanceSq = deltaX * deltaX + deltaY * deltaY
 
         let fillStyle = baseColor
-
         if (distanceSq <= proxSq) {
           const distance = Math.sqrt(distanceSq)
           const amount = 1 - distance / proximity
           const red = Math.round(baseRgb.r + (activeRgb.r - baseRgb.r) * amount)
           const green = Math.round(baseRgb.g + (activeRgb.g - baseRgb.g) * amount)
           const blue = Math.round(baseRgb.b + (activeRgb.b - baseRgb.b) * amount)
-          fillStyle = `rgb(${red}, ${green}, ${blue})`
+          fillStyle = `rgb(${red},${green},${blue})`
         }
 
         context.save()
@@ -179,9 +176,8 @@ function DotGrid({
     }
 
     draw()
-
     return () => cancelAnimationFrame(rafId)
-  }, [activeRgb, baseColor, baseRgb, circlePath, proximity])
+  }, [proximity, baseColor, activeRgb, baseRgb, circlePath])
 
   useEffect(() => {
     buildGrid()
@@ -209,6 +205,11 @@ function DotGrid({
 
   useEffect(() => {
     const onMove = (event) => {
+      const canvas = canvasRef.current
+      if (!canvas) {
+        return
+      }
+
       const now = performance.now()
       const pointer = pointerRef.current
       const deltaTime = pointer.lastTime ? now - pointer.lastTime : 16
@@ -233,11 +234,6 @@ function DotGrid({
       pointer.vy = velocityY
       pointer.speed = speed
 
-      const canvas = canvasRef.current
-      if (!canvas) {
-        return
-      }
-
       const rect = canvas.getBoundingClientRect()
       pointer.x = event.clientX - rect.left
       pointer.y = event.clientY - rect.top
@@ -253,20 +249,15 @@ function DotGrid({
           const pushY = dot.cy - pointer.y + velocityY * 0.005
 
           gsap.to(dot, {
-            xOffset: pushX,
-            yOffset: pushY,
-            duration: 0.7,
-            ease: 'power3.out',
+            inertia: { xOffset: pushX, yOffset: pushY, resistance },
             onComplete: () => {
               gsap.to(dot, {
                 xOffset: 0,
                 yOffset: 0,
                 duration: returnDuration,
-                ease: 'elastic.out(1, 0.75)',
-                onComplete: () => {
-                  dot._inertiaApplied = false
-                },
+                ease: 'elastic.out(1,0.75)',
               })
+              dot._inertiaApplied = false
             },
           })
         }
@@ -295,20 +286,15 @@ function DotGrid({
           const pushY = (dot.cy - clickY) * shockStrength * falloff
 
           gsap.to(dot, {
-            xOffset: pushX,
-            yOffset: pushY,
-            duration: 0.7,
-            ease: 'power3.out',
+            inertia: { xOffset: pushX, yOffset: pushY, resistance },
             onComplete: () => {
               gsap.to(dot, {
                 xOffset: 0,
                 yOffset: 0,
                 duration: returnDuration,
-                ease: 'elastic.out(1, 0.75)',
-                onComplete: () => {
-                  dot._inertiaApplied = false
-                },
+                ease: 'elastic.out(1,0.75)',
               })
+              dot._inertiaApplied = false
             },
           })
         }
@@ -324,7 +310,15 @@ function DotGrid({
       window.removeEventListener('mousemove', throttledMove)
       window.removeEventListener('click', onClick)
     }
-  }, [maxSpeed, proximity, returnDuration, shockRadius, shockStrength, speedTrigger])
+  }, [
+    maxSpeed,
+    speedTrigger,
+    proximity,
+    resistance,
+    returnDuration,
+    shockRadius,
+    shockStrength,
+  ])
 
   return (
     <section className={`dot-grid ${className}`.trim()} style={style} aria-hidden="true">
