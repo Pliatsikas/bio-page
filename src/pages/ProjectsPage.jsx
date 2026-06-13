@@ -12,6 +12,28 @@ function ProjectsPage() {
 
       <section className="projects-grid reveal">
         <article className="card project-card">
+          <p className="eyebrow">Fullstack</p>
+          <h2>TaskFlow — Task Management SaaS</h2>
+          <p>
+            A production-ready Kanban app built from scratch. Features a monorepo architecture, REST API with JWT auth and refresh tokens, real-time drag-and-drop boards via WebSockets, PostgreSQL with Prisma ORM, and Docker deployment on Railway.
+          </p>
+          <div className="tag-row" style={{ alignItems: 'center' }}>
+            <span>Next.js</span>
+            <span>Node.js</span>
+            <span>PostgreSQL</span>
+            <span>Socket.io</span>
+            <span>Docker</span>
+            <span>TypeScript</span>
+            <a className="btn" href="https://client-production-8121.up.railway.app" style={{ margin: 0, alignSelf: 'center' }}>
+              Live Demo
+            </a>
+            <a className="btn" href="https://github.com/Pliatsikas/TaskFlow" style={{ margin: 0, alignSelf: 'center' }}>
+              Source Code
+            </a>
+          </div>
+        </article>
+
+        <article className="card project-card">
           <p className="eyebrow">Automation</p>
           <h2>Rentalbook OCR Engine</h2>
           <p>

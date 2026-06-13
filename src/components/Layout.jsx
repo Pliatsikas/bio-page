@@ -74,7 +74,7 @@ function Layout() {
             </span>
             <span className="brand-copy">
               <strong>Alex Pliatsikas</strong>
-              <small>Systems, Web, AI, Tooling</small>
+              <small>Fullstack · AI · Systems · Tooling</small>
             </span>
           </NavLink>
 

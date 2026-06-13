@@ -4,20 +4,15 @@ function BioPage() {
       <section className="hero card reveal">
         <p className="eyebrow">About me</p>
         <h1>
-          I build intelligent software, AI integrations, and creative digital
-          experiences.
+          I build production-ready fullstack apps and intelligent software.
         </h1>
         <p className="lede">
-          I focus on clean architecture, context-aware workflows, and practical
-          problem-solving. Currently, my university thesis drives my research
-          deep into Large Language Models (LLMs) and Retrieval-Augmented
-          Generation (RAG), bridging AI with my full-stack web and reliable
-          tooling background.
+          I work end-to-end — from PostgreSQL schemas and REST APIs to React frontends with real-time features. I also build AI integrations and RAG pipelines, bridging research with real engineering.
         </p>
         <ul className="chip-row" aria-label="Quick facts">
           <li>Based in Thessaloniki, GR</li>
-          <li>LLM &amp; RAG Researcher</li>
-          <li>MkDocs</li>
+          <li>Node.js · PostgreSQL · React</li>
+          <li>Fullstack Developer</li>
           <li>Always learning</li>
         </ul>
       </section>
@@ -27,15 +22,13 @@ function BioPage() {
           <h2>Current Focus</h2>
           <ul className="focus-list">
             <li>
-              Developing RAG pipelines and evaluating LLMs for my university
-              thesis
+              Building TaskFlow, a production Kanban SaaS with real-time collaboration, drag &amp; drop, JWT auth and Docker deployment
+            </li>
+            <li>
+              Developing and evaluating RAG pipelines for my university thesis at UMacedonia
             </li>
             <li>
               Building AI copilots that synthesize context for enterprise tools
-            </li>
-            <li>
-              Delivering modern responsive frontends with clean component
-              architecture
             </li>
           </ul>
         </article>
@@ -48,12 +41,16 @@ function BioPage() {
               <dd>LLMs, RAG, Prompt Eng.</dd>
             </div>
             <div>
-              <dt>Languages</dt>
-              <dd>JavaScript, Python, PHP, SQL, React</dd>
+              <dt>Frontend</dt>
+              <dd>React, Next.js, TypeScript, Tailwind CSS</dd>
             </div>
             <div>
-              <dt>Docs &amp; Content</dt>
-              <dd>Markdown, MkDocs, Material for MkDocs</dd>
+              <dt>Backend &amp; DB</dt>
+              <dd>Node.js, Express, PostgreSQL, Prisma, Redis, Socket.io</dd>
+            </div>
+            <div>
+              <dt>DevOps</dt>
+              <dd>Docker, Railway, Git, JWT Auth</dd>
             </div>
             <div>
               <dt>Design</dt>
@@ -81,7 +78,7 @@ function BioPage() {
           </li>
           <li>
             <div className="meter-head">
-              <span>Frontend Development</span>
+              <span>Fullstack Development</span>
               <span>90%</span>
             </div>
             <div className="meter">
@@ -90,7 +87,7 @@ function BioPage() {
           </li>
           <li>
             <div className="meter-head">
-              <span>Creative Suite</span>
+              <span>Backend &amp; DevOps</span>
               <span>80%</span>
             </div>
             <div className="meter">
@@ -100,10 +97,10 @@ function BioPage() {
           <li>
             <div className="meter-head">
               <span>Programming Foundations</span>
-              <span>75%</span>
+              <span>85%</span>
             </div>
             <div className="meter">
-              <i style={{ width: '75%' }}></i>
+              <i style={{ width: '85%' }}></i>
             </div>
           </li>
         </ul>
