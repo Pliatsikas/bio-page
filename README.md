@@ -9,11 +9,11 @@
 ╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝    ╚═╝     ╚══════╝╚═╝╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝ 
 ```
 
-### `> systems · web · ai · tooling`
+### `> fullstack · ai · systems · tooling`
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=15&pause=1000&color=4DB79F&center=true&vCenter=true&width=500&lines=LLM+%26+RAG+Researcher;Full-Stack+Engineer;AI+Copilot+Builder;Always+Learning...)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=15&pause=1000&color=4DB79F&center=true&vCenter=true&width=500&lines=Fullstack+Engineer;LLM+%26+RAG+Researcher;AI+Copilot+Builder;Always+Learning...)](https://git.io/typing-svg)
 
-<img src="https://komarev.com/ghpvc/?username=alexpliatsikas&color=4db79f&style=flat-square&label=PROFILE+VIEWS" />
+<img src="https://komarev.com/ghpvc/?username=Pliatsikas&color=4db79f&style=flat-square&label=PROFILE+VIEWS" />
 
 </div>
 
@@ -22,15 +22,16 @@
 ```python
 class AlexPliatsikas:
     location   = "Thessaloniki, GR 🇬🇷"
-    role       = "LLM & RAG Researcher · Full-Stack Engineer"
+    role       = "Fullstack Engineer · LLM & RAG Researcher"
     thesis     = "Large Language Models + Retrieval-Augmented Generation"
     status     = "always_learning = True"
 
     def current_focus(self):
         return [
+            "🗂️ TaskFlow — Production Kanban SaaS (Next.js · Node.js · PostgreSQL · Socket.io · Docker)",
             "🧠 Developing RAG pipelines & evaluating LLMs (university thesis)",
             "🤖 Building AI copilots that synthesize context for enterprise tools",
-            "⚡ Delivering modern responsive frontends with clean architecture",
+            "⚡ Shipping production-ready fullstack apps end-to-end",
         ]
 
     def contact(self):
@@ -48,22 +49,22 @@ class AlexPliatsikas:
 <table align="center">
   <tr>
     <td align="center" width="200">
-      <strong>🤖 AI & Data</strong><br/>
-      <sub>LLMs · RAG · Prompt Engineering</sub>
-    </td>
-    <td align="center" width="200">
-      <strong>🌐 Languages</strong><br/>
-      <sub>JavaScript · Python · PHP · SQL</sub>
-    </td>
-    <td align="center" width="200">
       <strong>⚛️ Frontend</strong><br/>
-      <sub>React · HTML · CSS · Responsive Design</sub>
+      <sub>React · Next.js · TypeScript · Tailwind CSS</sub>
+    </td>
+    <td align="center" width="200">
+      <strong>🖥️ Backend & DB</strong><br/>
+      <sub>Node.js · Express · PostgreSQL · Prisma · Redis · Socket.io</sub>
+    </td>
+    <td align="center" width="200">
+      <strong>🐳 DevOps</strong><br/>
+      <sub>Docker · Railway · Git · JWT Auth</sub>
     </td>
   </tr>
   <tr>
     <td align="center" width="200">
-      <strong>🎨 Creative Suite</strong><br/>
-      <sub>Photoshop · Premiere Pro</sub>
+      <strong>🤖 AI & Data</strong><br/>
+      <sub>LLMs · RAG · Prompt Engineering · Python</sub>
     </td>
     <td align="center" width="200">
       <strong>🛠 Dev Tools</strong><br/>
@@ -84,6 +85,15 @@ class AlexPliatsikas:
 
 </div>
 
+### 🗂️ TaskFlow — Fullstack Task Management SaaS
+> *Production-ready Kanban app built from scratch · [🔗 Live Demo](https://client-production-8121.up.railway.app) · [📦 Source](https://github.com/Pliatsikas/TaskFlow)*
+
+Monorepo architecture with a REST API (JWT auth + refresh tokens), real-time drag-and-drop boards via WebSockets, PostgreSQL with Prisma ORM, and Docker deployment on Railway. Built end-to-end — from DB schema to polished UI.
+
+`Next.js 15` `Node.js` `TypeScript` `PostgreSQL` `Socket.io` `Docker` `Prisma` `Redis`
+
+---
+
 ### 🧠 E-Avenue Jira AI Copilot
 > *Retrieval-Augmented Generation meets enterprise tooling*
 
@@ -102,12 +112,12 @@ Engineered a production-grade OCR pipeline that instantly scans and extracts cri
 
 ---
 
-### 🏷️ Meatllab Concept Brand
-> *Visual systems & design language*
+### 🌐 Aura Immersive Web Experience
+> *WebGL fluid simulations & custom shaders*
 
-Built a complete visual system and landing concept for an industrial-style brand identity with reusable style tokens and UI architecture from the ground up.
+Next-gen architectural portfolio built with Next.js and React Three Fiber. Features real-time WebGL fluid simulations for a deeply tactile digital experience.
 
-`Branding` `UI System` `Prototype` `Design Tokens`
+`WebGL` `Next.js` `React Three Fiber` `Framer Motion`
 
 ---
 
@@ -118,9 +128,9 @@ Built a complete visual system and landing concept for an industrial-style brand
 </div>
 
 ```
-Frontend Development     ██████████████████░░  90%
+Fullstack Development    ██████████████████░░  90%
 AI Integration & RAG     █████████████████░░░  85%
-Creative Suite           ████████████████░░░░  80%
+Backend & DevOps         ████████████████░░░░  80%
 Programming Foundations  ███████████████░░░░░  75%
 ```
 
@@ -157,6 +167,7 @@ Programming Foundations  ███████████████░░░�
 
 ## 🌐 Connect
 
+[![Portfolio](https://img.shields.io/badge/Portfolio-pliatsikas.github.io-4db79f?style=for-the-badge&logo=github&logoColor=white)](https://pliatsikas.github.io/bio-page/)
 [![Email](https://img.shields.io/badge/Email-alexandrospliatsikas8%40gmail.com-f0b35c?style=for-the-badge&logo=gmail&logoColor=white)](mailto:alexandrospliatsikas8@gmail.com)
 
 ---
