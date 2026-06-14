@@ -1,6 +1,7 @@
 import { NavLink, Outlet, useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
 import DotGrid from './DotGrid'
+import TargetCursor from './TargetCursor'
 
 function Layout() {
   const location = useLocation()
@@ -52,6 +53,8 @@ function Layout() {
 
   return (
     <>
+      <TargetCursor />
+
       <div className="page-bg" aria-hidden="true">
         <DotGrid
           dotSize={5}
@@ -68,7 +71,7 @@ function Layout() {
 
       <div className="page-shell">
         <header className="site-header reveal">
-          <NavLink className="brand" to="/" aria-label="Home">
+          <NavLink className="brand cursor-target" to="/" aria-label="Home">
             <span className="logo" aria-hidden="true">
               AP
             </span>
@@ -79,13 +82,13 @@ function Layout() {
           </NavLink>
 
           <nav className="site-nav" aria-label="Main navigation">
-            <NavLink className={navClassName} to="/" end>
+            <NavLink className={({ isActive }) => `${navClassName({ isActive })} cursor-target`} to="/" end>
               Bio
             </NavLink>
-            <NavLink className={navClassName} to="/projects">
+            <NavLink className={({ isActive }) => `${navClassName({ isActive })} cursor-target`} to="/projects">
               Projects
             </NavLink>
-            <NavLink className={navClassName} to="/certificates">
+            <NavLink className={({ isActive }) => `${navClassName({ isActive })} cursor-target`} to="/certificates">
               Certificates
             </NavLink>
           </nav>
@@ -98,7 +101,7 @@ function Layout() {
         <footer className="site-footer reveal">
           <p>
             Contact:{' '}
-            <a href="mailto:alexandrospliatsikas8@gmail.com">
+            <a className="cursor-target" href="mailto:alexandrospliatsikas8@gmail.com">
               alexandrospliatsikas8@gmail.com
             </a>
           </p>

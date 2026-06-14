@@ -24,10 +24,10 @@ function ProjectsPage() {
             <span>Socket.io</span>
             <span>Docker</span>
             <span>TypeScript</span>
-            <a className="btn" href="https://client-production-8121.up.railway.app" style={{ margin: 0, alignSelf: 'center' }}>
+            <a className="btn cursor-target" href="https://client-production-8121.up.railway.app" style={{ margin: 0, alignSelf: 'center' }}>
               Live Demo
             </a>
-            <a className="btn" href="https://github.com/Pliatsikas/TaskFlow" style={{ margin: 0, alignSelf: 'center' }}>
+            <a className="btn cursor-target" href="https://github.com/Pliatsikas/TaskFlow" style={{ margin: 0, alignSelf: 'center' }}>
               Source Code
             </a>
           </div>
@@ -81,7 +81,7 @@ function ProjectsPage() {
             <span>WebGL</span>
             <span>Framer Motion</span>
             <span>Next.js</span>
-            <a className="btn" href="https://aura-sand-pi.vercel.app/" style={{ margin: 0, alignSelf: 'center' }}>
+            <a className="btn cursor-target" href="https://aura-sand-pi.vercel.app/" style={{ margin: 0, alignSelf: 'center' }}>
               Project details
             </a>
           </div>
