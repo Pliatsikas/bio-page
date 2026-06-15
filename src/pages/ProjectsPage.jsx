@@ -24,7 +24,7 @@ function ProjectsPage() {
             <span>Socket.io</span>
             <span>Docker</span>
             <span>TypeScript</span>
-            <a className="btn cursor-target" href="https://client-production-8121.up.railway.app" style={{ margin: 0, alignSelf: 'center' }}>
+            <a className="btn cursor-target" href="https://taskflowteam.up.railway.app" style={{ margin: 0, alignSelf: 'center' }}>
               Live Demo
             </a>
             <a className="btn cursor-target" href="https://github.com/Pliatsikas/TaskFlow" style={{ margin: 0, alignSelf: 'center' }}>
