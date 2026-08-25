@@ -15,7 +15,7 @@ function ProjectsPage() {
           <p className="eyebrow">Fullstack</p>
           <h2>TaskFlow — Task Management SaaS</h2>
           <p>
-            A production-ready Kanban app built from scratch. Features a monorepo architecture, REST API with JWT auth and refresh tokens, real-time drag-and-drop boards via WebSockets, PostgreSQL with Prisma ORM, and Docker deployment on Railway.
+            A production-ready Kanban app built from scratch. Features a monorepo architecture, REST API with JWT auth and refresh tokens, real-time drag-and-drop boards via WebSockets, PostgreSQL with Prisma ORM, and Docker deployment on Render.
           </p>
           <div className="tag-row" style={{ alignItems: 'center' }}>
             <span>Next.js</span>
@@ -24,7 +24,7 @@ function ProjectsPage() {
             <span>Socket.io</span>
             <span>Docker</span>
             <span>TypeScript</span>
-            <a className="btn cursor-target" href="https://taskflowteam.up.railway.app" target="_blank" style={{ margin: 0, alignSelf: 'center' }}>
+            <a className="btn cursor-target" href="https://taskflow-client-lake.vercel.app" target="_blank" style={{ margin: 0, alignSelf: 'center' }}>
               Live Demo
             </a>
             <a className="btn cursor-target" href="https://github.com/Pliatsikas/TaskFlow" target="_blank" style={{ margin: 0, alignSelf: 'center' }}>

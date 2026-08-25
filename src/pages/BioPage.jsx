@@ -50,7 +50,7 @@ function BioPage() {
             </div>
             <div>
               <dt>DevOps</dt>
-              <dd>Docker, Railway, Git, JWT Auth</dd>
+              <dd>Docker, Render, Git, JWT Auth</dd>
             </div>
             <div>
               <dt>Design</dt>

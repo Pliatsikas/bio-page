@@ -58,7 +58,7 @@ class AlexPliatsikas:
     </td>
     <td align="center" width="200">
       <strong>🐳 DevOps</strong><br/>
-      <sub>Docker · Railway · Git · JWT Auth</sub>
+      <sub>Docker · Render · Git · JWT Auth</sub>
     </td>
   </tr>
   <tr>
@@ -86,9 +86,9 @@ class AlexPliatsikas:
 </div>
 
 ### 🗂️ TaskFlow — Fullstack Task Management SaaS
-> *Production-ready Kanban app built from scratch · [🔗 Live Demo](https://client-production-8121.up.railway.app) · [📦 Source](https://github.com/Pliatsikas/TaskFlow)*
+> *Production-ready Kanban app built from scratch · [🔗 Live Demo](https://taskflow-client-lake.vercel.app) · [📦 Source](https://github.com/Pliatsikas/TaskFlow)*
 
-Monorepo architecture with a REST API (JWT auth + refresh tokens), real-time drag-and-drop boards via WebSockets, PostgreSQL with Prisma ORM, and Docker deployment on Railway. Built end-to-end — from DB schema to polished UI.
+Monorepo architecture with a REST API (JWT auth + refresh tokens), real-time drag-and-drop boards via WebSockets, PostgreSQL with Prisma ORM, and Docker deployment on Render. Built end-to-end — from DB schema to polished UI.
 
 `Next.js 15` `Node.js` `TypeScript` `PostgreSQL` `Socket.io` `Docker` `Prisma` `Redis`
 
