@@ -26,10 +26,10 @@ function ProjectsPage() {
             <span>Socket.io</span>
             <span>Docker</span>
             <span>TypeScript</span>
-            <a className="btn cursor-target" href="https://taskflow-client-lake.vercel.app" target="_blank" style={{ margin: 0, alignSelf: 'center' }}>
+            <a className="btn cursor-target" href="https://taskflow-client-lake.vercel.app" target="_blank" rel="noopener noreferrer" style={{ margin: 0, alignSelf: 'center' }}>
               Live Demo
             </a>
-            <a className="btn cursor-target" href="https://github.com/Pliatsikas/TaskFlow" target="_blank" style={{ margin: 0, alignSelf: 'center' }}>
+            <a className="btn cursor-target" href="https://github.com/Pliatsikas/TaskFlow" target="_blank" rel="noopener noreferrer" style={{ margin: 0, alignSelf: 'center' }}>
               Source Code
             </a>
           </div>
@@ -104,7 +104,7 @@ function ProjectsPage() {
             <span>WebGL</span>
             <span>Framer Motion</span>
             <span>Next.js</span>
-            <a className="btn cursor-target" href="https://aura-sand-pi.vercel.app/" target="_blank" style={{ margin: 0, alignSelf: 'center' }}>
+            <a className="btn cursor-target" href="https://aura-sand-pi.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ margin: 0, alignSelf: 'center' }}>
               Project details
             </a>
           </div>
