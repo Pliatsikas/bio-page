@@ -14,22 +14,27 @@ function ProjectsPage() {
 
       <section className="projects-grid reveal">
         <article className="card project-card">
-          <p className="eyebrow">Fullstack</p>
-          <h2>TaskFlow — Task Management SaaS</h2>
+          <p className="eyebrow">AI · Fullstack</p>
+          <h2>Job Hunt Copilot</h2>
           <p>
-            A production-ready Kanban app built from scratch. Features a monorepo architecture, REST API with JWT auth and refresh tokens, real-time drag-and-drop boards via WebSockets, PostgreSQL with Prisma ORM, and Docker deployment on Render.
+            Paste a job ad and get an honest read on it: a match score against
+            your own CV where every claimed match is backed by a verbatim quote,
+            the gaps worth preparing for, and a cover letter that addresses the
+            biggest gap instead of hiding it. Multi-provider LLM layer
+            (Groq / Gemini) with Zod validation, a fabrication detector,
+            per-user usage budgets and an eval suite.
           </p>
           <div className="tag-row" style={{ alignItems: 'center' }}>
-            <span>Next.js</span>
-            <span>Node.js</span>
-            <span>PostgreSQL</span>
-            <span>Socket.io</span>
-            <span>Docker</span>
+            <span>Next.js 15</span>
             <span>TypeScript</span>
-            <a className="btn cursor-target" href="https://taskflow-client-lake.vercel.app" target="_blank" rel="noopener noreferrer" style={{ margin: 0, alignSelf: 'center' }}>
+            <span>Prisma</span>
+            <span>PostgreSQL</span>
+            <span>Auth.js</span>
+            <span>LLMs</span>
+            <a className="btn cursor-target" href="https://job-hunt-copilot-gamma.vercel.app" target="_blank" rel="noopener noreferrer" style={{ margin: 0, alignSelf: 'center' }}>
               Live Demo
             </a>
-            <a className="btn cursor-target" href="https://github.com/Pliatsikas/TaskFlow" target="_blank" rel="noopener noreferrer" style={{ margin: 0, alignSelf: 'center' }}>
+            <a className="btn cursor-target" href="https://github.com/Pliatsikas/job-hunt-copilot" target="_blank" rel="noopener noreferrer" style={{ margin: 0, alignSelf: 'center' }}>
               Source Code
             </a>
           </div>
@@ -53,6 +58,44 @@ function ProjectsPage() {
             <Link className="btn cursor-target" to="/projects/repair-shop-app" style={{ margin: 0, alignSelf: 'center' }}>
               View case study
             </Link>
+          </div>
+        </article>
+
+        <article className="card project-card">
+          <p className="eyebrow">WebGL</p>
+          <h2>Aura Immersive Web Experience</h2>
+          <p>
+            A next-generation architectural portfolio built with Next.js and React Three Fiber. Features real-time WebGL fluid simulations and custom shaders for a deeply tactile digital experience.
+          </p>
+          <div className="tag-row" style={{ alignItems: 'center' }}>
+            <span>WebGL</span>
+            <span>Framer Motion</span>
+            <span>Next.js</span>
+            <a className="btn cursor-target" href="https://aura-sand-pi.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ margin: 0, alignSelf: 'center' }}>
+              Project details
+            </a>
+          </div>
+        </article>
+
+        <article className="card project-card">
+          <p className="eyebrow">Fullstack</p>
+          <h2>TaskFlow — Task Management SaaS</h2>
+          <p>
+            A production-ready Kanban app built from scratch. Features a monorepo architecture, REST API with JWT auth and refresh tokens, real-time drag-and-drop boards via WebSockets, PostgreSQL with Prisma ORM, and Docker deployment on Render.
+          </p>
+          <div className="tag-row" style={{ alignItems: 'center' }}>
+            <span>Next.js</span>
+            <span>Node.js</span>
+            <span>PostgreSQL</span>
+            <span>Socket.io</span>
+            <span>Docker</span>
+            <span>TypeScript</span>
+            <a className="btn cursor-target" href="https://taskflow-client-lake.vercel.app" target="_blank" rel="noopener noreferrer" style={{ margin: 0, alignSelf: 'center' }}>
+              Live Demo
+            </a>
+            <a className="btn cursor-target" href="https://github.com/Pliatsikas/TaskFlow" target="_blank" rel="noopener noreferrer" style={{ margin: 0, alignSelf: 'center' }}>
+              Source Code
+            </a>
           </div>
         </article>
 
@@ -91,22 +134,6 @@ function ProjectsPage() {
             {/* <a className="btn" href="#" style={{ margin: 0, alignSelf: 'center' }}>
               Project details
             </a> */}
-          </div>
-        </article>
-
-        <article className="card project-card">
-          <p className="eyebrow">WebGL</p>
-          <h2>Aura Immersive Web Experience</h2>
-          <p>
-            A next-generation architectural portfolio built with Next.js and React Three Fiber. Features real-time WebGL fluid simulations and custom shaders for a deeply tactile digital experience.
-          </p>
-          <div className="tag-row" style={{ alignItems: 'center' }}>
-            <span>WebGL</span>
-            <span>Framer Motion</span>
-            <span>Next.js</span>
-            <a className="btn cursor-target" href="https://aura-sand-pi.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ margin: 0, alignSelf: 'center' }}>
-              Project details
-            </a>
           </div>
         </article>
 
