@@ -6,176 +6,140 @@
 ███████║██║     █████╗   ╚███╔╝     ██████╔╝██║     ██║███████║   ██║   ███████╗██║█████╔╝ ███████║███████╗
 ██╔══██║██║     ██╔══╝   ██╔██╗     ██╔═══╝ ██║     ██║██╔══██║   ██║   ╚════██║██║██╔═██╗ ██╔══██║╚════██║
 ██║  ██║███████╗███████╗██╔╝ ██╗    ██║     ███████╗██║██║  ██║   ██║   ███████║██║██║  ██╗██║  ██║███████║
-╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝    ╚═╝     ╚══════╝╚═╝╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝ 
+╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝    ╚═╝     ╚══════╝╚═╝╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
 ```
 
-### `> fullstack · ai · systems · tooling`
+### `Fullstack engineer. Building real products from database to UI.`
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=15&pause=1000&color=4DB79F&center=true&vCenter=true&width=500&lines=Fullstack+Engineer;LLM+%26+RAG+Researcher;AI+Copilot+Builder;Always+Learning...)](https://git.io/typing-svg)
+**Portfolio & bio site → [pliatsikas.github.io/bio-page](https://pliatsikas.github.io/bio-page/)**
 
-<img src="https://komarev.com/ghpvc/?username=Pliatsikas&color=4db79f&style=flat-square&label=PROFILE+VIEWS" />
+[![Live](https://img.shields.io/badge/Live-pliatsikas.github.io-0d1117?style=for-the-badge&logo=github&logoColor=white)](https://pliatsikas.github.io/bio-page/)
+[![Email](https://img.shields.io/badge/Email-alexandrospliatsikas8@gmail.com-0d1117?style=for-the-badge&logo=gmail&logoColor=white)](mailto:alexandrospliatsikas8@gmail.com)
+[![GitHub](https://img.shields.io/badge/@Pliatsikas-0d1117?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Pliatsikas)
 
 </div>
 
 ---
 
-```python
-class AlexPliatsikas:
-    location   = "Thessaloniki, GR 🇬🇷"
-    role       = "Fullstack Engineer · LLM & RAG Researcher"
-    thesis     = "Large Language Models + Retrieval-Augmented Generation"
-    status     = "always_learning = True"
+### 🌐 About this site
 
-    def current_focus(self):
-        return [
-            "🗂️ TaskFlow — Production Kanban SaaS (Next.js · Node.js · PostgreSQL · Socket.io · Docker)",
-            "🧠 Developing RAG pipelines & evaluating LLMs (university thesis)",
-            "🤖 Building AI copilots that synthesize context for enterprise tools",
-            "⚡ Shipping production-ready fullstack apps end-to-end",
-        ]
+The source of my portfolio. Three pages plus one case study, built with **React 19 + Vite 8 + React Router 7**, plain CSS with a dark industrial theme, a GSAP-driven interactive dot grid and a custom cursor. Deployed to GitHub Pages.
 
-    def contact(self):
-        return "alexandrospliatsikas8@gmail.com"
+| Route | What's there |
+|---|---|
+| [`/`](https://pliatsikas.github.io/bio-page/) | Bio, focus areas, skill levels |
+| [`/projects`](https://pliatsikas.github.io/bio-page/projects) | Selected projects with live/source links |
+| [`/projects/repair-shop-app`](https://pliatsikas.github.io/bio-page/projects/repair-shop-app) | Case study — freelance Electron desktop app for a repair shop |
+| [`/certificates`](https://pliatsikas.github.io/bio-page/certificates) | Certifications |
+
+```bash
+npm install
+npm run dev       # local dev server
+npm run build     # production build → dist/ (also writes 404.html for SPA deep links)
+npm run deploy    # build + publish dist/ to the gh-pages branch
 ```
 
 ---
 
-<div align="center">
+### 👾 About Me
 
-## ⚡ Tech Arsenal
-
-</div>
-
-<table align="center">
-  <tr>
-    <td align="center" width="200">
-      <strong>⚛️ Frontend</strong><br/>
-      <sub>React · Next.js · TypeScript · Tailwind CSS</sub>
-    </td>
-    <td align="center" width="200">
-      <strong>🖥️ Backend & DB</strong><br/>
-      <sub>Node.js · Express · PostgreSQL · Prisma · Redis · Socket.io</sub>
-    </td>
-    <td align="center" width="200">
-      <strong>🐳 DevOps</strong><br/>
-      <sub>Docker · Render · Git · JWT Auth</sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="200">
-      <strong>🤖 AI & Data</strong><br/>
-      <sub>LLMs · RAG · Prompt Engineering · Python</sub>
-    </td>
-    <td align="center" width="200">
-      <strong>🛠 Dev Tools</strong><br/>
-      <sub>VS Code · Unix (zsh) · Git</sub>
-    </td>
-    <td align="center" width="200">
-      <strong>🔍 Computer Vision</strong><br/>
-      <sub>OCR · Image Processing · Automation</sub>
-    </td>
-  </tr>
-</table>
-
----
-
-<div align="center">
-
-## 🚀 Selected Projects
-
-</div>
-
-### 🗂️ TaskFlow — Fullstack Task Management SaaS
-> *Production-ready Kanban app built from scratch · [🔗 Live Demo](https://taskflow-client-lake.vercel.app) · [📦 Source](https://github.com/Pliatsikas/TaskFlow)*
-
-Monorepo architecture with a REST API (JWT auth + refresh tokens), real-time drag-and-drop boards via WebSockets, PostgreSQL with Prisma ORM, and Docker deployment on Render. Built end-to-end — from DB schema to polished UI.
-
-`Next.js 15` `Node.js` `TypeScript` `PostgreSQL` `Socket.io` `Docker` `Prisma` `Redis`
-
----
-
-### 🧠 E-Avenue Jira AI Copilot
-> *Retrieval-Augmented Generation meets enterprise tooling*
-
-An intelligent workspace assistant that synthesizes vast knowledge bases and historical Jira tickets to provide instant, accurate answers and accelerate issue resolution. RAG-powered. Context-aware. Built for scale.
-
-`Generative AI` `RAG` `NLP` `LLMs` `Enterprise Tooling`
-
----
-
-### 👁️ Rentalbook OCR Engine
-> *High-precision document intelligence pipeline*
-
-Engineered a production-grade OCR pipeline that instantly scans and extracts critical data points from passports and national ID cards — dynamically automating user verification with computer vision.
-
-`OCR` `Computer Vision` `Automation` `Python`
-
----
-
-### 🌐 Aura Immersive Web Experience
-> *WebGL fluid simulations & custom shaders*
-
-Next-gen architectural portfolio built with Next.js and React Three Fiber. Features real-time WebGL fluid simulations for a deeply tactile digital experience.
-
-`WebGL` `Next.js` `React Three Fiber` `Framer Motion`
-
----
-
-<div align="center">
-
-## 📊 Skill Levels
-
-</div>
-
-```
-Fullstack Development    ██████████████████░░  90%
-AI Integration & RAG     █████████████████░░░  85%
-Backend & DevOps         ████████████████░░░░  80%
-Programming Foundations  ███████████████░░░░░  75%
+```yaml
+name:       Alex Pliatsikas
+location:   Thessaloniki, GR
+education:  Applied Informatics @ University of Macedonia
+year:       4th (Final Year)
+thesis:     RAG Pipelines & LLM Evaluation
+focus:
+  - Fullstack web engineering (Next.js, Node.js, PostgreSQL)
+  - LLM products with grounding, evals & usage budgets
+  - Desktop apps for real clients (Electron, SQLite)
+  - Real-time systems & production deployments (Docker, Vercel, Render)
+status:     Always learning
 ```
 
 ---
 
-<div align="center">
+### 🚀 Selected Projects
 
-## 🎓 Certifications
-
-| Certificate | Platform | Year |
+| Project | Description | Tags |
 |---|---|---|
-| 📘 Learn RAG | Scrimba | 2026 |
-| 📗 PHP Crash Course | Udemy | 2026 |
-| 📙 HTML & CSS Crash Course | Scrimba | 2025 |
-| 📕 Responsive Web Design | Scrimba | 2025 |
-| 📒 Learn SQL | Scrimba | 2025 |
+| **[Job Hunt Copilot](https://github.com/Pliatsikas/job-hunt-copilot)** · [🔗 Live](https://job-hunt-copilot-gamma.vercel.app) | Paste a job ad, get a grounded match score against your CV (every match quotes the CV verbatim), the gaps worth preparing for, and a streamed cover letter. Multi-provider LLM layer with Zod validation + repair, fabrication detector, per-user usage budgets, eval suite | `Next.js 15` `TypeScript` `Prisma 7` `PostgreSQL` `Auth.js` `Groq` `Gemini` `Vitest` |
+| **[Repair Shop Management App](https://pliatsikas.github.io/bio-page/projects/repair-shop-app)** · freelance | Offline-first Electron desktop app for a small electronics repair business — replaced a legacy MS Access DB. Autosave, search, status lists, duplicate-serial detection, photo per repair, A4 print, Excel + direct `.mdb` import, PIN lock, daily backups. Delivered & installed for the client (private source) | `Electron` `React` `TypeScript` `Prisma` `SQLite` `Tailwind` |
+| **[TaskFlow](https://github.com/Pliatsikas/TaskFlow)** · [🔗 Live](https://taskflow-client-lake.vercel.app) | Production Kanban SaaS — monorepo, REST API, JWT auth with refresh tokens, real-time drag & drop via WebSockets, Docker deployment on Vercel + Render | `Next.js` `Node.js` `PostgreSQL` `Socket.io` `Docker` `TypeScript` |
+| **[Aura Immersive Web Experience](https://github.com/Pliatsikas/aura-site-demo)** · [🔗 Live](https://aura-sand-pi.vercel.app/) | Next-gen architectural portfolio with WebGL fluid simulations & custom shaders via Next.js + React Three Fiber | `WebGL` `Next.js` `Framer Motion` |
+| **E-Avenue Jira AI Copilot** | Intelligent workspace assistant using RAG to synthesize knowledge bases and historical Jira tickets for instant issue resolution | `Generative AI` `RAG` `NLP` |
+| **Rentalbook OCR Engine** | High-precision OCR pipeline that extracts data from passports & national IDs to automate user verification in real time | `OCR` `Computer Vision` `Automation` |
+
+<div align="center">
+<a href="https://pliatsikas.github.io/bio-page/projects/repair-shop-app"><img width="720" src="public/projects/repair-shop-app/screenshot-2.png" alt="Repair Shop Management App — repair record card (case study)"></a>
+<br/><sub>Repair Shop Management App — <a href="https://pliatsikas.github.io/bio-page/projects/repair-shop-app">read the case study</a></sub>
+</div>
+
+---
+
+### 🛠️ Tech Stack
+
+<div align="center">
+
+**Frontend & Desktop**
+
+![React](https://img.shields.io/badge/React-0d1117?style=flat-square&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-0d1117?style=flat-square&logo=nextdotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-0d1117?style=flat-square&logo=typescript&logoColor=3178C6)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-0d1117?style=flat-square&logo=tailwindcss&logoColor=38BDF8)
+![JavaScript](https://img.shields.io/badge/JavaScript-0d1117?style=flat-square&logo=javascript&logoColor=F7DF1E)
+![Electron](https://img.shields.io/badge/Electron-0d1117?style=flat-square&logo=electron&logoColor=47848F)
+
+**Backend & Database**
+
+![Node.js](https://img.shields.io/badge/Node.js-0d1117?style=flat-square&logo=nodedotjs&logoColor=339933)
+![Express](https://img.shields.io/badge/Express-0d1117?style=flat-square&logo=express&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0d1117?style=flat-square&logo=postgresql&logoColor=336791)
+![SQLite](https://img.shields.io/badge/SQLite-0d1117?style=flat-square&logo=sqlite&logoColor=003B57)
+![Prisma](https://img.shields.io/badge/Prisma-0d1117?style=flat-square&logo=prisma&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-0d1117?style=flat-square&logo=redis&logoColor=DC382D)
+![Socket.io](https://img.shields.io/badge/Socket.io-0d1117?style=flat-square&logo=socketdotio&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-0d1117?style=flat-square&logo=php&logoColor=777BB4)
+
+**DevOps, Testing & Tooling**
+
+![Docker](https://img.shields.io/badge/Docker-0d1117?style=flat-square&logo=docker&logoColor=2496ED)
+![Vercel](https://img.shields.io/badge/Vercel-0d1117?style=flat-square&logo=vercel&logoColor=white)
+![Render](https://img.shields.io/badge/Render-0d1117?style=flat-square&logo=render&logoColor=46E3B7)
+![Vitest](https://img.shields.io/badge/Vitest-0d1117?style=flat-square&logo=vitest&logoColor=6E9F18)
+![Playwright](https://img.shields.io/badge/Playwright-0d1117?style=flat-square&logo=playwright&logoColor=2EAD33)
+![Git](https://img.shields.io/badge/Git-0d1117?style=flat-square&logo=git&logoColor=F05032)
+![VS Code](https://img.shields.io/badge/VS%20Code-0d1117?style=flat-square&logo=visualstudiocode&logoColor=007ACC)
+![Unix/zsh](https://img.shields.io/badge/Unix%20%2F%20zsh-0d1117?style=flat-square&logo=gnubash&logoColor=white)
+
+**AI & Data**
+
+![LLMs](https://img.shields.io/badge/LLMs-0d1117?style=flat-square&logo=openai&logoColor=white)
+![RAG](https://img.shields.io/badge/RAG-0d1117?style=flat-square&logo=databricks&logoColor=white)
+![Prompt Engineering](https://img.shields.io/badge/Prompt%20Engineering-0d1117?style=flat-square&logo=anthropic&logoColor=white)
+![Zod](https://img.shields.io/badge/Zod-0d1117?style=flat-square&logo=zod&logoColor=3E67B1)
+![Python](https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=3776AB)
 
 </div>
 
 ---
 
-<div align="center">
+### 📜 Certifications
 
-## 📈 GitHub Stats
-
-<img height="160" src="https://github-readme-stats.vercel.app/api?username=Pliatsikas&show_icons=true&theme=dark&bg_color=05090a&title_color=f0b35c&icon_color=4db79f&text_color=e9efec&border_color=1a2a2a&hide_border=false&count_private=true" />
-<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Pliatsikas&layout=compact&theme=dark&bg_color=05090a&title_color=f0b35c&text_color=e9efec&border_color=1a2a2a&hide_border=false" />
-
-</div>
+```
+✦ HTML & CSS Crash Course     —  Scrimba   · 2025
+✦ Responsive Web Design       —  Scrimba   · 2025
+✦ Learn SQL                   —  Scrimba   · 2025
+✦ Learn RAG                   —  Scrimba   · 2026
+✦ PHP Crash Course            —  Udemy     · 2026
+```
 
 ---
 
 <div align="center">
 
-## 🌐 Connect
+**→ [pliatsikas.github.io/bio-page](https://pliatsikas.github.io/bio-page/) ←**
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-pliatsikas.github.io-4db79f?style=for-the-badge&logo=github&logoColor=white)](https://pliatsikas.github.io/bio-page/)
-[![Email](https://img.shields.io/badge/Email-alexandrospliatsikas8%40gmail.com-f0b35c?style=for-the-badge&logo=gmail&logoColor=white)](mailto:alexandrospliatsikas8@gmail.com)
-
----
-
-<sub>Built with ☕ and too many terminal tabs · Thessaloniki, GR</sub>
-
-```
-> currently compiling thesis_rag_pipeline.py ... ██████████░░░░ 71%
-```
+`Fullstack · AI · Desktop · Real-time · Production`
 
 </div>
