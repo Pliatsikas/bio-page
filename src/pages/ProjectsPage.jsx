@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function ProjectsPage() {
   return (
     <>
@@ -30,6 +32,27 @@ function ProjectsPage() {
             <a className="btn cursor-target" href="https://github.com/Pliatsikas/TaskFlow" target="_blank" style={{ margin: 0, alignSelf: 'center' }}>
               Source Code
             </a>
+          </div>
+        </article>
+
+        <article className="card project-card">
+          <p className="eyebrow">Desktop</p>
+          <h2>Repair Shop Management App</h2>
+          <p>
+            Custom desktop application (Electron) for managing customers and
+            repairs at a small business — replaced a legacy MS Access database
+            with a modern, offline-first system.
+          </p>
+          <div className="tag-row" style={{ alignItems: 'center' }}>
+            <span>React</span>
+            <span>TypeScript</span>
+            <span>Electron</span>
+            <span>Prisma</span>
+            <span>SQLite</span>
+            <span>Tailwind CSS</span>
+            <Link className="btn cursor-target" to="/projects/repair-shop-app" style={{ margin: 0, alignSelf: 'center' }}>
+              View case study
+            </Link>
           </div>
         </article>
 

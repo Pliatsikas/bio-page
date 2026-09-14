@@ -461,6 +461,91 @@ body.js .reveal.in {
   }
 }
 
+/* Case study page (/projects/repair-shop-app) */
+.case-text {
+  color: #cde3dc;
+  line-height: 1.66;
+  margin-top: 0.7rem;
+  max-width: 68ch;
+}
+
+.card .case-text + .btn {
+  margin-top: 1.1rem;
+}
+
+.case-features {
+  margin-top: 1rem;
+}
+
+.case-features li {
+  color: #cde3dc;
+}
+
+.case-features strong {
+  color: var(--text);
+}
+
+.case-features code {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 0.16rem;
+  font-family: var(--mono);
+  font-size: 0.82em;
+  padding: 0.05rem 0.3rem;
+}
+
+.case-spec {
+  margin-top: 0.9rem;
+}
+
+.case-gallery {
+  align-items: start;
+  display: grid;
+  gap: var(--space-3);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 1.1rem;
+}
+
+.case-gallery .wide {
+  grid-column: 1 / -1;
+}
+
+.case-gallery figure {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 0.24rem;
+  display: grid;
+  gap: 0.6rem;
+  margin: 0;
+  padding: 0.6rem;
+}
+
+.case-gallery img {
+  border: 1px solid var(--line);
+  border-radius: 0.16rem;
+  display: block;
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+.case-gallery figcaption {
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+}
+
+.case-note .btn {
+  margin-top: 1.1rem;
+}
+
+@media (max-width: 860px) {
+  .case-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .reveal,
   .reveal.in,
