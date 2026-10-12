@@ -546,6 +546,53 @@ body.js .reveal.in {
   }
 }
 
+/* Featured certificate (IBM) on /certificates */
+.cert-featured {
+  border-color: rgba(240, 179, 92, 0.42);
+}
+
+.cert-featured::before {
+  border-color: rgba(77, 183, 159, 0.55);
+}
+
+.cert-featured h2 {
+  font-size: clamp(1.18rem, 0.8vw + 1rem, 1.5rem);
+  margin-top: 0.5rem;
+}
+
+.cert-featured-sub {
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 0.76rem;
+  letter-spacing: 0.04em;
+  margin-top: 0.3rem;
+}
+
+.cert-featured-text {
+  color: #cde3dc;
+  line-height: 1.66;
+  margin-top: 0.75rem;
+  max-width: 64ch;
+}
+
+.cert-featured .chip-row {
+  margin-top: 0.9rem;
+}
+
+.cert-featured .btn {
+  margin-top: 1.1rem;
+}
+
+.cert-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 860px) {
+  .cert-list {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .reveal,
   .reveal.in,
